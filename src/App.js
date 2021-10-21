@@ -1,9 +1,17 @@
+import React from 'react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import logo from './logo.svg';
+
 function App() {
   return (
     <div className="App">
-      <h1>Prueba1</h1>
+      <header>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>We now have Auth!</h1>
+      </header>
+      <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
