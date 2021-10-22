@@ -1,0 +1,16 @@
+div.carousel-indicators [type="button"] {
+    background-color: #0446fa; /* Green */
+    border-radius: 10%;
+    width: 20%;
+  }
+
+  .carousel-item [title="image"] {
+    align-content: center;
+    width: 40%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #0446fa;
+    color-scheme: yellow;
+  }

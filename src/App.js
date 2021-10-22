@@ -1,16 +1,23 @@
 import React from 'react';
+import BarraNabegacion from './componentes/BarraNabegacion';
+import BotonPrincipal from './componentes/BotonPrincipal';
+import Carrusel from './componentes/Carrusel';
+import Ejemplo from './componentes/Ejemplo';
+import Formulario from './componentes/Formulario';
+import Inicio from './componentes/Inicio';
+
+
+
 
 import logo from './logo.svg';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hola mundo</h1>
-        <h2>Hola Miguel</h2>
-      </header>
-      
+        <Inicio />
+        <BarraNabegacion />
+        <Formulario />
+        <Carrusel />
     </div>
   );
 }
