@@ -1,15 +1,12 @@
 import React from 'react';
 import BarraNabegacion from './componentes/BarraNabegacion';
-import BotonPrincipal from './componentes/BotonPrincipal';
+import 'animate.css';
 import Carrusel from './componentes/Carrusel';
-import Ejemplo from './componentes/Ejemplo';
 import Formulario from './componentes/Formulario';
 import Inicio from './componentes/Inicio';
 
 
-
-
-import logo from './logo.svg';
+import PoppersEjem from './Pruebas/PoppersEjem';
 
 function App() {
   return (
@@ -18,6 +15,7 @@ function App() {
         <BarraNabegacion />
         <Formulario />
         <Carrusel />
+        <PoppersEjem />
     </div>
   );
 }
