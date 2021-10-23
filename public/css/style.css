@@ -27,6 +27,10 @@ div.carousel-indicators [type="button"] {
   color: #fcff39;
 }
 
+#PaddingTitulo{
+  
+}
+
 #mainName{
   
   display: grid;
@@ -54,6 +58,7 @@ div.carousel-indicators [type="button"] {
 
   #tituloPagina {
     background-color:#EAF9FA;;
+    
   }
 
   #tituloPaginaNombre {
@@ -64,7 +69,8 @@ div.carousel-indicators [type="button"] {
   #tituloPaginaNombreTexto{
     color:white;
     text-align: center;
-    font-size: 4rem;
+    padding-bottom: 15%;
+    /*font-size: 4rem;*/
   }
 
   #bodyPerfil {
@@ -124,3 +130,5 @@ div.carousel-indicators [type="button"] {
     width: 300px;
     height: 300px;
   }
+
+  

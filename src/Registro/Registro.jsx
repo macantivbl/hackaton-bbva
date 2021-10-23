@@ -4,7 +4,7 @@ import BarraNabegacion from '../componentes/BarraNabegacion'
 const Registro = () => {
     return (
         <div>
-            <BarraNabegacion />
+            
 
             <div id='SeccionRegistro' className='container'>
                 <form className="row justify-content-lg-center" action="./PaginaPrincipal.html">

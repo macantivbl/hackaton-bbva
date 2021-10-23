@@ -7,7 +7,7 @@ const Perfil = () => {
         
 
         <div id='bodyPerfil'>
-            <BarraNabegacion/>
+            
             <div
                 className="mesUno box"
                 data-anijs="if: load, on:window, do: bounceInDown animated; if: mousemove, do: shake animated"

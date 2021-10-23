@@ -26,15 +26,20 @@ function App() {
           </Route>
 
           <Route path="/Perfil">
+            <BarraNabegacion />
             <Perfil />
           </Route>
+          
           <Route path="/Tips">
-            <ManejoFinanzas/>
+            <BarraNabegacion />
+            <ManejoFinanzas />
           </Route>
 
           <Route path="/Registro">
-            <Registro/>
+            <BarraNabegacion />
+            <Registro />
           </Route>
+
         </Switch>
       </Router>
     </div>
