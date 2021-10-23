@@ -1,19 +1,38 @@
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 div.carousel-indicators [type="button"] {
-    background-color: #0446fa; /* Green */
-    border-radius: 10%;
-    width: 20%;
-  }
+  background-color: #D4EDFC; /* Green */
+  border-radius: 10%;
+  width: 20%;
+}
 
-  .carousel-item [title="image"] {
-    align-content: center;
-    width: 40%;
-  }
+.carousel-item [title="image"] {
+  align-content: center;
+  width: 75%;
+}
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #0446fa;
-    color-scheme: yellow;
-  }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #002f6c;
+  color-scheme: yellow;
+}
+
+.navbar-link{
+  color: #fcff39;
+}
+
+#mainName{
+  
+  display: grid;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
 
   .alert-enter {
     opacity: 0;
@@ -31,4 +50,77 @@ div.carousel-indicators [type="button"] {
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms;
+  }
+
+  #tituloPagina {
+    background-color:#EAF9FA;;
+  }
+
+  #tituloPaginaNombre {
+    background-color:#002f6c;
+    
+  }
+  
+  #tituloPaginaNombreTexto{
+    color:white;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  #bodyPerfil {
+    margin: 100px auto;
+    width: 600px;
+    border: 2px solid #f4f4f4;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: black;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .mesUno {
+    background: #b2e6e9;
+  }
+
+  .mesCuatro {
+    background: #5ac4c4;
+  }
+
+  .mesCinco {
+    background: #02a5a5;
+  }
+
+  .mesTres {
+    background: #2dcccd;
+  }
+
+  .mesDos {
+    background: #2dcccd;
+  }
+
+  .mesSeis {
+    background: #028484;
+  }
+
+  #SeccionFinanzas{
+    background:#043263 no-repeat center center;
+    background-size:cover;
+    color: white;
+    margin-top: 10%;
+  }
+
+  #SeccionRegistro{
+    margin-top: 10%;
+  }
+
+  #ImagenFinanzas:hover{
+    width: 300px;
+    height: 300px;
   }

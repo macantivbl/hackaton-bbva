@@ -1,77 +1,48 @@
 import React from 'react'
-import diferencia from './img/diferencia-inversion-ahorro.jpg'
-import estrategia from './img/Fondos-Estrategia-BBVA.jpg'
-import inversion from './img/fondos-inversion-bancomer.png'
+import diferencia from './img/1.jpg'
+import estrategia from './img/2.jpg'
+import inversion from './img/3.jpg'
+import inversion2 from './img/4.jpg'
+
 
 const Carrusel = () => {
     return (
-        <div>
-            <div id="carouselMainPage" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-indicators">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselMainPage"
-                        data-bs-slide-to="0"
-                        className="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselMainPage"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselMainPage"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img
-                            title="image"
-                            src={diferencia}
-                            className="mx-auto d-block"
-                            alt="..."
-                        />
+        <div className='container'>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src={diferencia} class="d-block w-100" alt="..."></img>
+                        <div class ="carousel-caption d-none d-md-block">
+                        
+                        </div>
                     </div>
-                    <div className="carousel-item">
-                        <img
-                            title="image"
-                            src={estrategia}
-                            className="mx-auto d-block"
-                            alt="..."
-                        />
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src={estrategia} class="d-block w-100" alt="..."></img>
+                        <div class ="carousel-caption d-none d-md-block">
+                        
+                        </div>
                     </div>
-                    <div className="carousel-item">
-                        <img
-                            title="image"
-                            src={inversion}
-                            className="mx-auto d-block"
-                            alt="..."
-                        />
+                    <div class="carousel-item">
+                        <img src={inversion} class="d-block w-100" alt="..."></img>
+                        <div class ="carousel-caption d-none d-md-block">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src={inversion2} class="d-block w-100" alt="..."></img>
+                        <div class ="carousel-caption d-none d-md-block">
+                        
+                        </div>
                     </div>
                 </div>
-                <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselMainPage"
-                    data-bs-slide="prev"
-                >
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselMainPage"
-                    data-bs-slide="next"
-                >
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
