@@ -255,8 +255,8 @@ const Perfil = () => {
 
                     <div id="montos" className="row" >
                         <h4><b>Monto Acumulado</b> = $4,988.50 MXN</h4>
-                        <h4><b>Tasa de Referencia</b> = 14.6%</h4>
-                        <h4><b>Potenciador = ++ 0.02</b></h4>
+                        
+                        
                         <h4 id="OscarH4" ><b>Mejora tu salud financiera</b></h4>
                         <h3 id="OscarH3">Completado</h3>
                         <br />
