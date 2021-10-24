@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "BentonSansBBVA-Light";
+  src: url("./BentonSansBBVA-Light.otf");
+}
+@font-face {
+  font-family: "BentonSansBBVA-Book";
+  src: url("./BentonSansBBVA-Book.otf");
+}
+@font-face {
+  font-family: "BentonSansBBVA-Bold";
+  src: url("./BentonSansBBVA-Bold.otf");
+}
+body {
+  margin: auto;
+  border: 2px solid #f4f4f4;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 0px 0;
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 0.8s;
+  /*animation-iteration-count: initial;*/
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: black;
+  display: inline-block;
+  margin: 20px;
+  animation-play-state: running;
+}
+
+.mesUno {
+  background: #d4edfc;
+}
+
+.mesDos {
+  background: #5bbeff;
+}
+
+.mesTres {
+  background: #49a5e6;
+}
+
+.mesCuatro {
+  background: #1973b8;
+}
+
+.mesCinco {
+  background: #1464a5;
+}
+
+.mesSeis {
+  background: #043263;
+}
+
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.3, 1.07, 0.71, 1.04);
+}
+.bounce-8 {
+  animation-name: bounce-8;
+  animation-timing-function: cubic-bezier(0.3, 1.07, 0.71, 1.04);
+}
+
+.spin1 {
+  animation-name: spin1;
+  animation-timing-function: cubic-bezier(0.3, 1.07, 0.71, 1.04);
+}
+
+@keyframes bounce-7 {
+  0% {
+    opacity: 0.1;
+    transform: translate(0, 500px);
+  }
+  5% {
+    opacity: 0.2;
+    transform: translate(0, 400px);
+  }
+  10% {
+    opacity: 0.3;
+    transform: translate(0, 300px);
+  }
+  15% {
+    opacity: 0.4;
+    transform: translate(0, 200px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(0, 0px);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translate(0, -30px);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translate(0, -80px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(0, -30px);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translate(0, 0px);
+  }
+  70% {
+    opacity: 0.9;
+    transform: translate(0, 30px);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(00, 80px);
+  }
+  85% {
+    opacity: 1;
+    transform: translate(00, 30px);
+  }
+  90% {
+    transform: translate(00, 20px);
+  }
+  95% {
+    transform: translate(00, 10px);
+  }
+  100% {
+    transform: translate(00, 0px);
+  }
+}
+
+@keyframes bounce-8 {
+  0% {
+    opacity: 0.1;
+    transform: translate(0, -500px);
+  }
+  5% {
+    opacity: 0.2;
+    transform: translate(0, -400px);
+  }
+  10% {
+    opacity: 0.3;
+    transform: translate(0, -300px);
+  }
+  15% {
+    opacity: 0.4;
+    transform: translate(0, -200px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(0, 0px);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translate(0, 30px);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translate(0, 80px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(0, 30px);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translate(0, 0px);
+  }
+  70% {
+    opacity: 0.9;
+    transform: translate(0, -30px);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(00, -80px);
+  }
+  85% {
+    opacity: 1;
+    transform: translate(00, -30px);
+  }
+  90% {
+    transform: translate(00, -20px);
+  }
+  95% {
+    transform: translate(00, -10px);
+  }
+  100% {
+    transform: translate(00, 0px);
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    transform: scale(1, 1) rotateY(0deg);
+  }
+  5% {
+    transform: scale(1.1, 1.1) rotateY(24deg);
+  }
+  10% {
+    transform: scale(1.3, 1.3) rotateY(48deg);
+  }
+  15% {
+    transform: scale(1.5, 1.5) rotateY(72deg);
+  }
+  20% {
+    transform: scale(1.7, 1.7) rotateY(96deg);
+  }
+  30% {
+    transform: scale(1.9, 1.9) rotateY(120deg);
+  }
+  40% {
+    transform: scale(1.9, 1.9) rotateY(144deg);
+  }
+  50% {
+    transform: scale(2.1, 2.1) rotateY(168deg);
+  }
+  60% {
+    transform: scale(2.3, 2.3) rotateY(192deg);
+  }
+  70% {
+    transform: scale(2.1, 2.1) rotateY(216deg);
+  }
+  80% {
+    transform: scale(1.9, 1.9) rotateY(240deg);
+  }
+  85% {
+    transform: scale(1.7, 1.7) rotateY(264deg);
+  }
+  90% {
+    transform: scale(1.5, 1.5) rotateY(288deg);
+  }
+  95% {
+    transform: scale(1.3, 1.3) rotateY(312deg);
+  }
+  100% {
+    transform: scale(1, 1) rotateY(360deg);
+  }
+}
