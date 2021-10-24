@@ -6,11 +6,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
+
 } from "react-router-dom";
 import Perfil from './Perfil/Perfil';
-import PoppersEjem from './Pruebas/PoppersEjem';
 import ManejoFinanzas from './Tips/ManejoFinanzas';
 import Registro from './Registro/Registro';
 import SobreNosotros from './Preguntas/SobreNosotros';

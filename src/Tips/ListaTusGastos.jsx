@@ -12,11 +12,12 @@ const ListaTusGastos = () => {
                         <img src={DivideGastosIMG} className="card-img-top" alt="metasIMG"></img>
                         <div className="card-header">Lista Tus Gastos</div>
                         <div className="card-body">
-                            <h5 className="card-title">Cuestionario</h5>
+                            <h5 className="card-title">Interes</h5>
                             <p className="card-text">
-                                Aqui ponemos un texto explicativo de unos 3 a 5 renglones que
-                                hable acerca del consejo de lista tus gastos, este deberia ser un
-                                cuadro de texto donde verte efectivamente esa informacion
+                            Conocer tus gastos e ingresos te permite fijar 
+                            un presupuesto y consolidar tus activos. Aprovecha 
+                            el poder de ahorrar con interés compuesto.
+
                             </p>
                         </div>
                     </div>
@@ -36,7 +37,7 @@ const ListaTusGastos = () => {
                         </symbol>
                     </svg>
 
-                    <h1>Pregunta</h1>
+                    <h1>¿Qué es el interés?</h1>
 
 
                     <div className="alert alert-info" role="alert">
@@ -44,36 +45,39 @@ const ListaTusGastos = () => {
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                    Opcion A
+                                Es una deuda.
                                 </label>
                             </div>
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion A
+                                Es el capital de un negocio.
                                 </label>
                             </div>
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion B
+                                Una garantía colateral.
                                 </label>
                             </div>
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(2)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion C
+                                El interés es el costo de pedir dinero prestado, 
+                                donde el prestatario paga una tarifa al prestamista por el préstamo. 
                                 </label>
                             </div>
                         </form>
 
-                        {estadoRespuesta == 1 ? null :
-                            estadoRespuesta == 2 ?
+                        {estadoRespuesta === 1 ? null :
+                            estadoRespuesta === 2 ?
                                 <div id='alertaRespuesta' >
                                     <div className="alert alert-success d-flex align-items-center" role="alert">
                                         <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"> <use xlinkHref="#check-circle-fill" /></svg>
                                         <div>
-                                            Correcto
+                                        CORRECTA. 
+                                        ¡Felicidades, has contestado de manera acertada! Si acumulas cierto capital, 
+                                        tu puedes generar intereses sobre el mismo en forma de rendimientos.
                                         </div>
                                     </div>
                                 </div> :
@@ -81,7 +85,7 @@ const ListaTusGastos = () => {
                                 <div className="alert alert-danger d-flex align-items-center" role="alert">
                                     <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlinkHref="#exclamation-triangle-fill" /></svg>
                                     <div>
-                                        Incorrecto
+                                    ¡Intenta de nuevo!
                                     </div>
                                 </div>
 

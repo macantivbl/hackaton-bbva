@@ -1,5 +1,4 @@
 import React from 'react'
-import BarraNabegacion from '../componentes/BarraNabegacion'
 
 const Registro = () => {
     return (

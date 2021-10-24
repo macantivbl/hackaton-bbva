@@ -5,7 +5,7 @@ import { useParams } from 'react-router'
 const MetasFinancieras = (estado) => {
     const [estadoRespuesta, setEstadoRespuesta] = React.useState(1)
 
-    
+
 
 
 
@@ -18,11 +18,11 @@ const MetasFinancieras = (estado) => {
                         <img src={metasIMG} className="card-img-top" alt="metasIMG"></img>
                         <div className="card-header">Lista Tus Gastos</div>
                         <div className="card-body">
-                            <h5 className="card-title">Cuestionario</h5>
+                            <h5 className="card-title">Metas Financieras</h5>
                             <p className="card-text">
-                                Aqui ponemos un texto explicativo de unos 3 a 5 renglones que
-                                hable acerca del consejo de lista tus gastos, este deberia ser un
-                                cuadro de texto donde verte efectivamente esa informacion
+                            ¿Tienes algún objetivo de ahorro? 
+                            ¿Te gustaría conocer que objetivos puedes alcanzar ahorrando? 
+                            Te apoyamos a alcanzar tus metas para que realices tus sueños.
                             </p>
                         </div>
                     </div>
@@ -42,54 +42,61 @@ const MetasFinancieras = (estado) => {
                         </symbol>
                     </svg>
 
-                    <h1>Pregunta</h1>
+                    <h1>
+                    ¿Qué es un plan de pensión de retiro?
+                    </h1>
 
-                    
+
                     <div className="alert alert-info" role="alert">
                         <form>
                             <div className="form-check">
-                                <input onClick={() => setEstadoRespuesta(3)}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+                                <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                    Opcion A
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input onClick={() => setEstadoRespuesta(3)}  className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
-                                <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion A
+                                Un mito.
                                 </label>
                             </div>
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion B
+                                Un impuesto
                                 </label>
                             </div>
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(2)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    Opcion C
+                                Una pensión es una forma fiscalmente eficiente de ahorrar para su jubilación. Su objetivo es proporcionarle una fuente de ingresos en su vida posterior. 
+                                
+                                </label>
+                            </div>
+                            <div className="form-check">
+                                <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
+                                <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                Un servicio de cuidado de automóviles.
                                 </label>
                             </div>
                         </form>
 
-                        {estadoRespuesta == 1 ? null :
-                            estadoRespuesta == 2 ?
+                        {estadoRespuesta === 1 ? null :
+                            estadoRespuesta === 2 ?
                                 <div id='alertaRespuesta' >
                                     <div className="alert alert-success d-flex align-items-center" role="alert">
                                         <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"> <use xlinkHref="#check-circle-fill" /></svg>
                                         <div>
-                                            Correcto
+                                        CORRECTA. ¡Felicidades, 
+                                        has contestado de manera acertada! 
+                                        Ahorrar para tu retiro de forma temprana puede impactar 
+                                        de manera positiva tu calidad de vida durante la vejez.
+
                                         </div>
                                     </div>
-                                </div> : 
+                                </div> :
 
                                 <div className="alert alert-danger d-flex align-items-center" role="alert">
-                                <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlinkHref="#exclamation-triangle-fill"/></svg>
-                                <div>
-                                  Incorrecto
+                                    <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlinkHref="#exclamation-triangle-fill" /></svg>
+                                    <div>
+                                        ¡Intenta de nuevo!
+                                    </div>
                                 </div>
-                              </div>
 
                         }
 

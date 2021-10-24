@@ -9,15 +9,9 @@ import BalanceIMG from "../componentes/img/Balance.png";
 import PriorizaGastos from "../componentes/img/PriorizaGastos.png"
 import PresupuestoIMG from "../componentes/img/presupuesto.png"
 import limitesIMG from "../componentes/img/limites.png"
-import BarraNabegacion from '../componentes/BarraNabegacion';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    NavLink
-} from "react-router-dom";
+
+import {Link} from "react-router-dom";
 
 const ManejoFinanzas = () => {
 
