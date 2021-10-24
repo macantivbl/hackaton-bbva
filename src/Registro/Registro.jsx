@@ -1,76 +1,99 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import Imagen from '../componentes/img/opcion4.png'
 const Registro = () => {
     return (
-        <div>
-            
+        <div id='CuerpoPerfil'>
 
-            <div id='SeccionRegistro' className='container'>
-                <form className="row justify-content-lg-center" action="./PaginaPrincipal.html">
-                    <div className="col-lg-2"></div>
-                    <div className="col-md-4">
-                        <label for="inputEmail4" className="form-label">Email</label>
-                        <input type="email" className="form-control" id="inputEmail4" />
+            <div className="container">
+                <section id='DianaSeccion' className="text-center">
+                    <div className="container my-3 text-center ">
+                        <h1 id='DianaH1' className="mb-1">
+                            <Link to='/'>
+                                KALAN
+                            </Link>
+                        </h1>
+                        <h3 id='DianaH3' className="mb-5"><em>"Empieza tu trayectoria en Kalan"</em></h3>
+                        <div className="overlay"></div>
                     </div>
-                    <div className="col-md-4">
-                        <label for="inputPassword4" className="form-label">Password</label>
-                        <input type="password" className="form-control" id="inputPassword4" />
-                    </div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-4">
-                        <label for="inputAddress" className="form-label">Address</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="inputAddress"
-                            placeholder="1234 Main St"
-                        />
-                    </div>
-                    <div className="col-4">
-                        <label for="inputAddress2" className="form-label">Address 2</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="inputAddress2"
-                            placeholder="Apartment, studio, or floor"
-                        />
-                    </div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-md-4">
-                        <label for="inputCity" className="form-label">City</label>
-                        <input type="text" className="form-control" id="inputCity" />
-                    </div>
-                    <div className="col-md-4">
-                        <label for="inputState" className="form-label">State</label>
-                        <select id="inputState" className="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-lg-2"></div>
-                    <div className="col-md-4">
-                        <label for="inputZip" className="form-label">Zip</label>
-                        <input type="text" className="form-control" id="inputZip" />
-                    </div>
+                </section>
 
-                    <div className="col-6">
-                        <br />
-                        <br />
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck" />
-                            <label className="form-check-label" for="gridCheck"> Check me out </label>
+            </div>
+
+            <span className="border border-primary">
+                <div className='container'>
+
+                    <div className="row align-items-center">
+                        <div className="col">
+                            <img id='imagenDiana' src={Imagen} className="img-fluid" alt="Login"></img>
+                        </div>
+
+                        <div id='FormularioDiana' className='col'>
+                            <div className="text-center">
+                                <h4 className="text-dark mb-4">Bienvenido de regreso!</h4>
+                            </div>
+
+                            <form className="user">
+
+                                <div className="mb-3">
+                                    <input className="form-control form-control-user"
+                                        type="email" id="exampleInputEmail" aria-describedby="emailHelp"
+                                        placeholder="Ingresa tu dirección de correo" name="email">
+                                    </input>
+                                </div>
+
+                                <div className="mb-3">
+                                    <input className="form-control form-control-user"
+                                        type="password" id="exampleInputPassword"
+                                        placeholder="Contraseña" name="password">
+                                    </input>
+                                </div>
+
+
+                                <div className="mb-3">
+                                    <div className="custom-control custom-checkbox small">
+                                        <div className="form-check">
+                                            <input
+                                                className="form-check-input custom-control-input"
+                                                type="checkbox" id="formCheck-1">
+                                            </input>
+                                            <label
+                                                className="form-check-label custom-control-label"
+                                                htmlFor="formCheck-1">
+                                                Recuerdame
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr />
+                                <button type="button" className="btn btn-outline-success">
+                                   
+                                    Inicia sesión
+                                </button>
+
+
+                                <hr />
+                                <div className="container">
+                                    <a className="btn btn-primary d-block btn-google btn-user w-100 mb-2"
+                                        role="button"><i className="fab fa-google"></i>&nbsp; Ingresa con
+                                        Google</a>
+                                    <a
+                                        className="btn btn-primary d-block btn-facebook btn-user w-100"
+                                        role="button"><i className="fab fa-facebook-f"></i>&nbsp; Ingresa con
+                                        Facebook</a>
+                                </div>
+
+
+
+                            </form>
+
                         </div>
                     </div>
-                    <div className="col-6">
-                        <br />
-                        <button type="submit" className="btn btn-primary">Sign in</button>
-                    </div>
-                    <div className="col-lg-2"></div>
-                </form>
-            </div>
+
+
+                </div>
+            </span>
 
         </div>
     )

@@ -16,7 +16,7 @@ const MetasFinancieras = (estado) => {
                 <div className="col">
                     <div className="card border-info mb-3" style={{ maxWidth: "18rem" }}>
                         <img src={metasIMG} className="card-img-top" alt="metasIMG"></img>
-                        <div className="card-header">Lista Tus Gastos</div>
+                        <div className="card-header"></div>
                         <div className="card-body">
                             <h5 className="card-title">Metas Financieras</h5>
                             <p className="card-text">
@@ -49,18 +49,21 @@ const MetasFinancieras = (estado) => {
 
                     <div className="alert alert-info" role="alert">
                         <form>
+                            
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault1">
                                 Un mito.
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
                                 Un impuesto
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(2)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
@@ -68,16 +71,19 @@ const MetasFinancieras = (estado) => {
                                 
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
                                 Un servicio de cuidado de automóviles.
                                 </label>
                             </div>
+                            <hr />
                         </form>
 
                         {estadoRespuesta === 1 ? null :
                             estadoRespuesta === 2 ?
+                                
                                 <div id='alertaRespuesta' >
                                     <div className="alert alert-success d-flex align-items-center" role="alert">
                                         <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"> <use xlinkHref="#check-circle-fill" /></svg>

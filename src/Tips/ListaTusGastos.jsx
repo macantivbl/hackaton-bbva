@@ -1,5 +1,5 @@
 import React from 'react'
-import DivideGastosIMG from '../componentes/img/DivideGastos.png';
+import DivideGastosIMG from '../componentes/img/gastos.png';
 
 const ListaTusGastos = () => {
     const [estadoRespuesta, setEstadoRespuesta] = React.useState(1)
@@ -10,9 +10,9 @@ const ListaTusGastos = () => {
                 <div className="col">
                     <div className="card border-info mb-3" style={{ maxWidth: "18rem" }}>
                         <img src={DivideGastosIMG} className="card-img-top" alt="metasIMG"></img>
-                        <div className="card-header">Lista Tus Gastos</div>
+                        <div className="card-header"></div>
                         <div className="card-body">
-                            <h5 className="card-title">Interes</h5>
+                            <h5 className="card-title">Lista Tus Gastos</h5>
                             <p className="card-text">
                             Conocer tus gastos e ingresos te permite fijar 
                             un presupuesto y consolidar tus activos. Aprovecha 
@@ -48,18 +48,21 @@ const ListaTusGastos = () => {
                                 Es una deuda.
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
                                 Es el capital de un negocio.
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(3)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
                                 Una garantía colateral.
                                 </label>
                             </div>
+                            <hr />
                             <div className="form-check">
                                 <input onClick={() => setEstadoRespuesta(2)} className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
                                 <label className="form-check-label" htmlFor="flexRadioDefault2">
@@ -67,6 +70,7 @@ const ListaTusGastos = () => {
                                 donde el prestatario paga una tarifa al prestamista por el préstamo. 
                                 </label>
                             </div>
+                            <hr />
                         </form>
 
                         {estadoRespuesta === 1 ? null :

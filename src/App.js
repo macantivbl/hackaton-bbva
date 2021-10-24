@@ -56,7 +56,7 @@ function App() {
 
 
           <Route path="/Registro">
-            <BarraNabegacion />
+            
             <Registro />
           </Route>
 

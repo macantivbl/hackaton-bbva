@@ -10,7 +10,7 @@ const BarraNabegacion = () => {
                 <div className="container-fluid" id='tituloPaginaNombre'>
                     <div className="mx-auto" >
                         <Link to='/'>
-                            <a id='tituloPaginaNombreTexto' className="nav-link" className="navbar-brand">Kalan</a>
+                            <a id='tituloPaginaNombreTexto' className="nav-link" className="navbar-brand" >Kalan</a>
                         </Link>
 
                     </div>

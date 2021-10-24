@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Moneda from '../componentes/img/MonedaG.gif'
 import Coin from '../componentes/img/coin.png'
 import profPic1 from '../componentes/img/profPic1.gif'
@@ -21,6 +22,8 @@ const Perfil = () => {
         }
         document.getElementById("section1").src = pic;
     }
+
+
 
     const cambioDeNivel = () => {
         document.getElementById("anim1").style.background = "#D4EDFC";
@@ -143,7 +146,7 @@ const Perfil = () => {
                                         <button
                                             id="BtnN1"
                                             onClick={() => { cambioDeNivel() }}
-                                            className="btn btn-primary btn-lg"
+                                            className="btn btn-primary btn-lg me-2"
                                             type="button"
                                         >
                                             Nivel 1
@@ -151,7 +154,7 @@ const Perfil = () => {
                                         <button
                                             id="BtnN2"
                                             onClick={() => { cambioDeNivel2() }}
-                                            className="btn btn-primary btn-lg"
+                                            className="btn btn-primary btn-lg me-2"
                                             type="button"
 
                                         >
@@ -160,16 +163,18 @@ const Perfil = () => {
                                         <button
                                             id="BtnN5"
                                             onClick={() => { cambioDeNivel3() }}
-                                            className="btn btn-primary btn-lg"
+                                            className="btn btn-primary btn-lg me-2"
                                             type="button"
 
                                         >
                                             Nivel 3
                                         </button>
 
+
+
                                         <button
                                             id="BtnN3"
-                                            className="btn btn-primary btn-lg"
+                                            className="btn btn-primary btn-lg me-2"
                                             type="button"
                                             data-bs-toggle="popover"
                                             title="Continúa cultivando buenos hábitos financieros "
@@ -181,6 +186,7 @@ const Perfil = () => {
                                         <button
                                             id="BtnN4"
                                             className="btn btn-primary btn-lg"
+
                                             type="button"
                                             data-bs-toggle="popover"
                                             title="La constancia en el ahorro dará frutos"
@@ -200,9 +206,52 @@ const Perfil = () => {
             <div className="row">
                 <div className="col-0"></div>
 
-                <div 
+                <div
                     className="col-10 align-content-center text-center"
                 >
+
+                    <br />
+                    <br />
+
+                    <div className="row">
+                        <div className="col-2"></div>
+                        <div className="col-8">
+                            <div className="progress progress-bar-animated progress-bar-striped">
+                                <div
+                                    id="barraProg"
+                                    className="progress-bar progress-bar-animated"
+
+                                ></div>
+                            </div>
+                            <h6 id="OscarH6" >
+                                Vacaciones
+                            </h6>
+                            <br />
+                            <div className="progress progress-bar-animated progress-bar-striped">
+                                <div
+                                    id="barraProg2"
+                                    className="progress-bar progress-bar-animated"
+
+                                ></div>
+                            </div>
+
+                            <h6 id='OscarH6'>
+                                Universidad
+                            </h6>
+                            <br />
+                            <div className="progress progress-bar-animated progress-bar-striped">
+                                <div
+                                    id="barraProg3"
+                                    className="progress-bar progress-bar-animated"
+
+                                ></div>
+                            </div>
+                            <h6 id='OscarH6'>
+                                Salud
+                            </h6>
+                        </div>
+                    </div>
+
 
                     <div id="montos" className="row" >
                         <h4><b>Monto Acumulado</b> = $4,988.50 MXN</h4>
@@ -221,76 +270,36 @@ const Perfil = () => {
                         </div>
 
                         <div id="anim2" className="mesDos box bounce-8">
-                            <img src={Coin}alt="" className="bounce-8" />
+                            <img src={Coin} alt="" className="bounce-8" />
                             <br />
                             <img src={Moneda} alt="" />
                         </div>
 
                         <div id="anim3" className="mesTres box bounce-8">
-                            <img src={Coin}alt="" className="bounce-8" />
+                            <img src={Coin} alt="" className="bounce-8" />
                             <br />
                             <img id="med3" src={Moneda} alt="" />
                         </div>
 
                         <div id="anim4" className="mesCuatro box bounce-7">
-                            <img src={Coin}alt="" className="bounce-7" />
+                            <img src={Coin} alt="" className="bounce-7" />
                             <br />
                             <img id="med4" src={Moneda} alt="" />
                         </div>
 
                         <div id="anim5" className="mesCinco box bounce-7">
-                            <img src={Coin}alt="" className="bounce-7" />
+                            <img src={Coin} alt="" className="bounce-7" />
                             <br />
                             <img id="med5" src={Moneda} alt="" />
                         </div>
 
                         <div id="anim6" className="mesSeis box bounce-7">
-                            <img src={Coin}alt="" className="bounce-7" />
+                            <img src={Coin} alt="" className="bounce-7" />
                             <br />
                             <img id="med6" src={Moneda} alt="" />
                         </div>
                     </div>
-                    <br />
-                    <br />
 
-                    <div className="row">
-                        <div className="col-2"></div>
-                        <div className="col-8">
-                            <div className="progress progress-bar-animated progress-bar-striped">
-                                <div
-                                    id="barraProg"
-                                    className="progress-bar progress-bar-animated"
-                                    
-                                ></div>
-                            </div>
-                            <h6 id="OscarH6" >
-                                Vacaciones
-                            </h6>
-                            <br />
-                            <div className="progress progress-bar-animated progress-bar-striped">
-                                <div
-                                    id="barraProg2"
-                                    className="progress-bar progress-bar-animated"
-                                    
-                                ></div>
-                            </div>
-
-                            <h6 id='OscarH6'>
-                                Universidad
-                            </h6>
-                            <br />
-                            <div className="progress progress-bar-animated progress-bar-striped">
-                                <div
-                                    id="barraProg3"
-                                    className="progress-bar progress-bar-animated"
-                                    
-                                ></div>
-                            </div>
-                            <h6 id='OscarH6'>
-                                Salud
-                            </h6>
-                        </div>
-                    </div>
                 </div>
             </div>
 

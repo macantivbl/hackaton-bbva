@@ -123,7 +123,7 @@ div.carousel-indicators [type="button"] {
   }
 
   #SeccionRegistro{
-    margin-top: 10%;
+    margin-top: 12%;
   }
 
   #ImagenFinanzas:hover{
@@ -131,4 +131,44 @@ div.carousel-indicators [type="button"] {
     height: 300px;
   }
 
+/*-----------------------Diana Estilos--------------------*/
+
+#CuerpoPerfil{
+  background-color: #5BBEFF;
   
+  color: #6754B8;
+  text-align: justify;
+  
+}
+
+#DianaH1 {
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+#DianaH3 {
+  color: #F8CD51;
+  text-align: center;
+}
+
+#DianaSeccion {
+  background-color: #043263;
+  text-align: center;
+  background-size: cover;
+}
+
+
+tr{
+  color:#361379; 
+}
+tr:nth-child(even) {
+background: rgb(73,165,230);
+background: linear-gradient(90deg, rgba(73,165,230,1) 35%, rgba(45,204,205,1) 60%, rgba(91,190,255,1) 98%);;
+}
+
+#cardDiana{
+  background: rgb(73,165,230);
+background: linear-gradient(12deg, rgba(73,165,230,0.6029762246695554) 35%, rgba(45,204,205,0.6281863087031687) 60%, rgba(91,188,255,0.5553571770505077) 98%);
+ 
+}
