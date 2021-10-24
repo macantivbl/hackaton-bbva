@@ -236,3 +236,97 @@ body {
     transform: scale(1, 1) rotateY(360deg);
   }
 }
+
+
+/*----------------------------------*/
+
+#ClassOscarDiv{
+  background-Color: #072146;
+}
+
+#section1{
+  border-radius: 100%" width="240;
+}
+
+#ClassOscarP{
+  color: #f8cd51;
+  font-family: BentonSansBBVA-Bold;
+  font-size: 40px;
+}
+
+#ClassOscarP2{
+  color: #f8cd51;
+  font-family: BentonSansBBVA-Light;
+  font-size: 20px;
+
+}
+
+#ClassOscarDiv2{
+  width: 40%;
+}
+
+
+#ClassOscarP3{
+  color: #666666;
+  font-family: BentonSansBBVA-Bold;
+  font-size: 20px;
+  margin: 0%;
+
+}
+
+#ClassOscarDiv3{
+ background-color: #f4f4f4; 
+ margin: 10%
+}
+
+#BtnN1{
+  background-color: #5bbeff; 
+  border: none
+}
+
+#BtnN2{
+  background-color: #2dcccd; 
+  border: none
+}
+
+#BtnN3{
+  background-color: #d3d3d3; 
+  border: none
+}
+
+#BtnN4{
+background-color: #b79e5e; border: none
+}
+
+#BtnN5{
+  background-color: #f7893b; 
+  border: none
+}
+
+#OscarH4{
+ color: #277a3e
+}
+
+#OscarH3{
+  color: #277a3e
+} 
+
+#OscarH6{
+  color: #072146; font-family: BentonSansBBVA-Bold
+} 
+
+#barraProg2{
+  width: 40%; background-color: #5bbeff
+}
+
+#barraProg{
+ width: 60%; background-color: #5bbeff
+}
+
+#barraProg3{
+ width: 90%; background-color: #5bbeff
+}
+
+#montos{
+  margin: 2%
+}

@@ -34,7 +34,7 @@ function App() {
 
 
           <Route path="/Perfil">
-            <BarraNabegacion />
+          <BarraNabegacion />
             <Perfil />
           </Route>
 

@@ -42,7 +42,7 @@ const BarraNabegacion = () => {
                                 <li className="nav-item">
 
                                     <Link to='/Perfil'>
-                                        <a className="nav-link" >Perfil</a>
+                                        <a className="nav-link" >Perfil (Strauss23)</a>
 
                                     </Link>
 
