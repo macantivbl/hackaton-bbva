@@ -11,6 +11,14 @@ import PresupuestoIMG from "../componentes/img/presupuesto.png"
 import limitesIMG from "../componentes/img/limites.png"
 import BarraNabegacion from '../componentes/BarraNabegacion';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from "react-router-dom";
+
 const ManejoFinanzas = () => {
 
     //style={{ width: '18rem' }}
@@ -20,18 +28,28 @@ const ManejoFinanzas = () => {
 
             <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                 <div className="col">
-
-                    <a href={metasIMG} ><img id='ImagenFinanzas' src={metasIMG} alt="Goals" className="rounded-circle" width="160" height="160"></img></a> 
+                    <Link to='/Tips/Metas'>
+                        <a href={metasIMG} >
+                            <img id='ImagenFinanzas' src={metasIMG} alt="Goals" className="rounded-circle" width="160" height="160"></img></a>
+                    </Link>
                     <h5>Metas Financieras.</h5>
                     <p className="font-weight-light mb-0">"Establece metas a corto, mediano y largo plazo"</p>
                 </div>
                 <div className="col">
-                    <img id='ImagenFinanzas' src={ingresosIMG} alt="ING" className="rounded-circle" width="160" height="160" ></img>
+                    <Link to='/Tips/Ingresos'>
+                        <a href={metasIMG} >
+                            <img id='ImagenFinanzas' src={ingresosIMG} alt="ING" className="rounded-circle" width="160" height="160" ></img></a>
+                    </Link>
+
                     <h5>Identifica ingresos.</h5>
                     <p className="font-weight-light mb-0">"Podras poner especial atención a actividades que ye hacen obtener dinero"</p>
                 </div>
                 <div className="col">
-                    <img id='ImagenFinanzas' src={GastosIMG} className="rounded-circle" alt="Goals" width="160" height="160"></img>
+                    <Link to='/Tips/ListaTusGastos'>
+                        <a href={metasIMG} >
+                        <img id='ImagenFinanzas' src={GastosIMG} className="rounded-circle" alt="Goals" width="160" height="160"></img></a>
+                    </Link>
+                    
                     <h5>Lista tus gastos.</h5>
                     <p className="font-weight-light mb-0">"Identifica gastos inecesarios"</p>
                 </div>

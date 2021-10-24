@@ -1,6 +1,6 @@
 # Reto: Ayuda a Invertir
 
-## Proyecto kukulkan
+## Proyecto Kalan
 
 ## Available Scripts
 
