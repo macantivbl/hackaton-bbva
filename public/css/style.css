@@ -2,6 +2,16 @@ a:link {
   text-decoration: none;
 }
 
+#logoInicio{
+  width: 35px;
+  height: 30px;
+}
+
+#logoInicio2{
+  width: 65px;
+  height: 60px;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -131,6 +141,9 @@ div.carousel-indicators [type="button"] {
     height: 300px;
   }
 
+  #carruselStyle{
+    margin-top: 12%;
+  }
 /*-----------------------Diana Estilos--------------------*/
 
 #CuerpoPerfil{
