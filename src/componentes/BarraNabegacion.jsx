@@ -17,7 +17,7 @@ const BarraNabegacion = () => {
                 <div className="container-fluid" id='tituloPaginaNombre'>
                     <div className="mx-auto" >
                         <Link to='/'>
-                            <a id='tituloPaginaNombreTexto' className="nav-link" className="navbar-brand">Kukulkan APP</a>
+                            <a id='tituloPaginaNombreTexto' className="nav-link" className="navbar-brand">Kalan</a>
                         </Link>
 
                     </div>
@@ -55,7 +55,10 @@ const BarraNabegacion = () => {
 
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Tutorial</a>
+                                    <Link to='/Tutorial'>
+                                        <a className="nav-link" >Preguntas Frequentes</a>
+                                    </Link>
+                                    
                                 </li>
                                 <li className="nav-item">
                                     <Link to='/Tips'>

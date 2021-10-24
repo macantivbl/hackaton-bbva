@@ -13,6 +13,7 @@ import Perfil from './Perfil/Perfil';
 import PoppersEjem from './Pruebas/PoppersEjem';
 import ManejoFinanzas from './Tips/ManejoFinanzas';
 import Registro from './Registro/Registro';
+import SobreNosotros from './Preguntas/SobreNosotros';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
             <BarraNabegacion />
             <Perfil />
           </Route>
-          
+
           <Route path="/Tips">
             <BarraNabegacion />
             <ManejoFinanzas />
@@ -38,6 +39,11 @@ function App() {
           <Route path="/Registro">
             <BarraNabegacion />
             <Registro />
+          </Route>
+
+          <Route path="/Tutorial">
+            <BarraNabegacion />
+            <SobreNosotros/>
           </Route>
 
         </Switch>
