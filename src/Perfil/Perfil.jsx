@@ -7,8 +7,23 @@ import profPic2 from '../componentes/img/profPic2.gif'
 import profPic3 from '../componentes/img/profPic3.gif'
 import profPic4 from '../componentes/img/profPic4.gif'
 
+import { auth } from '../firebase'
+import { withRouter } from 'react-router-dom'
 
-const Perfil = () => {
+
+
+const Perfil = (props) => {
+    const [user,setUser] = React.useState(null)
+    React.useEffect(()=>{
+        if (auth.currentUser) {
+            console.log('usuario exite');
+            setUser(auth.currentUser)
+        } else {
+            console.log('no exite el usuraio');
+            props.history.push('/Registro')
+        }   
+    },[props.history])
+
     function changePhoto(sw) {
         var pic;
         if (sw == 0) {
@@ -311,4 +326,4 @@ const Perfil = () => {
     )
 }
 
-export default Perfil
+export default withRouter(Perfil)

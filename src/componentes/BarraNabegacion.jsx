@@ -1,9 +1,19 @@
 import React from 'react'
 import logoInicio from './img/KALAN.png'
 
-import {Link} from "react-router-dom";
-const BarraNabegacion = () => {
+import { Link } from "react-router-dom";
+import { auth } from '../firebase';
+import { withRouter } from 'react-router';
+
+const BarraNabegacion = (props) => {
+    const cerrarSesion = () => {
+        auth.signOut()
+        .then(()=>{
+            props.history.push('/')
+        })        
+    }
     return (
+        
         <div >
 
             <nav id="PaddingTitulo" className="navbar navbar-light bg-light fixed-top" >
@@ -20,7 +30,7 @@ const BarraNabegacion = () => {
                         <span className="navbar-toggler-icon">
 
                             <a href="#" className="navbar-brand ">
-                                <img  id='logoInicio' src={logoInicio} alt="" className="mx-auto"
+                                <img id='logoInicio' src={logoInicio} alt="" className="mx-auto"
 
                                 ></img>
                             </a>
@@ -34,9 +44,9 @@ const BarraNabegacion = () => {
                                 <Link to='/'>
 
                                     <a className="nav-link" >KALAN</a>
-                                    <img  id='logoInicio2' src={logoInicio} alt="" className="mx-auto"
+                                    <img id='logoInicio2' src={logoInicio} alt="" className="mx-auto"
 
-                                ></img>
+                                    ></img>
                                 </Link></h5>
                             <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
@@ -44,18 +54,23 @@ const BarraNabegacion = () => {
                         <div className="offcanvas-body" id='tituloPagina' >
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
+                                    {
+                                        props.firebaseUser !== null ? (
+                                            <Link to='/Perfil'>
+                                                <a className="nav-link" >Perfil (Strauss23)</a>
+                                            </Link>
+                                        ) : (
+                                            null
+                                        )
+                                    }
 
-                                    <Link to='/Perfil'>
-                                        <a className="nav-link" >Perfil (Strauss23)</a>
-
-                                    </Link>
 
                                 </li>
                                 <li className="nav-item">
                                     <Link to='/Tutorial'>
                                         <a className="nav-link" >Preguntas Frequentes</a>
                                     </Link>
-                                    
+
                                 </li>
                                 <li className="nav-item">
                                     <Link to='/Tips'>
@@ -65,16 +80,22 @@ const BarraNabegacion = () => {
                                 </li>
 
                             </ul>
-                            <div className="d-flex flex-column bd-highlight mb-3">
-                                <Link to='/Registro'>
-                                    <button type="button" className="btn btn-primary">Registro</button>
-                                </Link>
 
-                            </div>
+                            {
+                                props.firebaseUser !== null ? (
+                                    
+                                        <button type="button" className="btn btn-dark"
+                                        onClick={() => cerrarSesion()}
+                                        >Cerrar Sesion</button>
+                                    
+                                ) : (
+                                    <Link to='/Registro'>
+                                        <button type="button" className="btn btn-info">Iniciar Sesion</button>
+                                    </Link>
+                                )
+                            }
                             <div className="d-flex flex-column bd-highlight mb-3">
-                                <Link to='/Registro'>
-                                    <button type="button" className="btn btn-info">Iniciar Sesion</button>
-                                </Link>
+
 
                             </div>
 
@@ -88,4 +109,4 @@ const BarraNabegacion = () => {
     )
 }
 
-export default BarraNabegacion
+export default withRouter(BarraNabegacion)
